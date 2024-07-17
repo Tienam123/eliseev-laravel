@@ -30,7 +30,7 @@
 </head>
 <body>
 <div id="app" class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md border-bottom">
+    <nav class="navbar navbar-dark navbar-expand-md border-bottom">
         <div class="container">
             <a
                 class="navbar-brand"
