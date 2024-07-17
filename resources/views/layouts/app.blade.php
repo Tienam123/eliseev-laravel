@@ -29,8 +29,8 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-<div id="app">
-    <nav class="navbar navbar-expand-md">
+<div id="app" class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md border-bottom">
         <div class="container">
             <a
                 class="navbar-brand"
@@ -124,13 +124,17 @@
         </div>
     </nav>
 
-    <main class="app-content py-3">
+    <main class="app-content py-3 flex-fill">
         <div class="container">
             @yield('content')
         </div>
     </main>
-    <footer>
-
+    <footer class="border-top pt-3">
+        <div class="container">
+            <div class="">
+                <p>&copy; {{date('Y')}} - Adverts</p>
+            </div>
+        </div>
     </footer>
 </div>
 </body>
