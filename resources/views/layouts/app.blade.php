@@ -126,6 +126,8 @@
 
     <main class="app-content py-3 flex-fill">
         <div class="container">
+           @yield('breadcrumbs')
+            @include('layouts.partials.flash')
             @yield('content')
         </div>
     </main>
